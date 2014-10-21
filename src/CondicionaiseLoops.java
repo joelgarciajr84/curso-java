@@ -27,6 +27,16 @@ public class CondicionaiseLoops {
 		System.out.println("Nao autorizado ou votou errado");
 	}
 	
+// While
+	
+	int carros = 4;
+	
+	while (carros <= 10){
+		
+		System.out.println(carros);
+		
+		++carros;
+	}
 	
 		
 	}
