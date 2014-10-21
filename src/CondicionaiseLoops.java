@@ -19,7 +19,7 @@ public class CondicionaiseLoops {
 		
 	boolean VotanoPT = true;
 	
-	if (VotanoPT == true && idade >= 16){
+	if (!VotanoPT  && idade >= 16){
 		
 		System.out.println("Parabens vc escolheu corretamente");
 	}else{
