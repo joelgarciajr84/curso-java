@@ -43,7 +43,9 @@ public class CondicionaiseLoops {
 	for(int PrecoiPhone = 1000; PrecoiPhone <= 2000; PrecoiPhone = PrecoiPhone + 500){
 		
 		if (PrecoiPhone <= 1999){
+			
 		System.out.println("O Preco do iPhone esta R$ " + PrecoiPhone + " Ainda nao posso comprar pra ostentar");
+		
 		}else{
 			
 			System.out.println("O Preco do iPhone esta R$ " + PrecoiPhone + " Agora posso ostentar");
