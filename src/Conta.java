@@ -6,14 +6,25 @@ public class Conta {
 	double saldo;
 	double limite;
 	double salario;
+	Cliente titular = new Cliente();
 	
 	//Metodo para Sacar
 	
-	void saca(double quantidade){
+	boolean saca(double quantidade){
 		
-		double novoSaldo = this.saldo - quantidade;
-		
-		this.saldo = novoSaldo;
+		if(this.saldo < quantidade){
+			return false;
+		}else{
+			
+			this.saldo = this.saldo - quantidade;
+			
+			double novoSaldo = this.saldo - quantidade;
+			
+			this.saldo = novoSaldo;
+			return true;
+		}
+	
+	
 	}
 	
 	//Metodo para Depositar

@@ -5,14 +5,17 @@ public class Programa {
 		
 		//Criando a conta
 		
-		Conta minhaConta;
-		
-		minhaConta = new Conta();
+		Conta minhaConta = new Conta();
+		minhaConta.titular.nome = "Joel Garcia Jr";
 		
 		//Alterando valores
 		
+		
 		minhaConta.dono = "Joel";
 		minhaConta.saldo = 2000.00;
+	
+		
+		System.out.println("Nome do Cliente: " + minhaConta.titular.nome);
 		
 		System.out.println("Saldo Atual R$ " + minhaConta.saldo);
 		
