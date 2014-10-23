@@ -6,18 +6,23 @@ public class Empresa {
 	
 	
 	void adiciona(Funcionario f){
+
+		int elementos = 0; //this.empregados.length;
 			
-		int tamanho = this.empregados.length - 1;
-		
-		this.empregados[tamanho] = f;
-		
+			
+				this.empregados[elementos] = f;
+				
+				elementos++;
+			
 		}
+	
+		
 	void exibeEmpregados(){
 		
 		for(int x =0; x <= this.empregados.length; x++){
 			
 			System.out.println("Funcionario na Posicao" + x);
-			System.out.println("Nome do Funcionario" + this.empregados[x].nome);
+			System.out.println("Nome do Funcionario" + this.empregados[x].getNome());
 		}
 	}
 	}

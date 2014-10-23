@@ -4,22 +4,22 @@ public class TestaEmpresa {
 		
 		Empresa empresa = new Empresa();
 		
-		empresa.empregados = new Funcionario[10];
+		empresa.empregados = new Funcionario[30];
 		
-		System.out.println("Array this.empregados tem tamanho" + empresa.empregados.length);
+		System.out.println("Array this.empregados tem tamanho " + empresa.empregados.length);
 		
-		Funcionario f1 = new Funcionario();
-		f1.nome = "Funcionario Teste 1";
-		f1.salario = 2450;
-		empresa.adiciona(f1);
+		Funcionario f10 = new Funcionario("Ronan da Silva", "Logistica", 1260.89);
 		
-		
-	Funcionario f2 = new Funcionario();
-	f2.salario = 1267;
-	empresa.adiciona(f2);
+		//f1.nome = "Funcionario Teste 1";
+		//f1.salario = 2450;
+		empresa.adiciona(f10);
 		
 		
-
+	Funcionario f11 = new Funcionario("Jociara Santos", "Saude", 4678.23);
+	
+	//f2.salario = 1267;
+	
+	empresa.adiciona(f11);
 		
 		empresa.exibeEmpregados();
 		
